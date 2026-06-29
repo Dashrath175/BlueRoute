@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./public/Preview.png" alt="BlueRoute Preview" width="100%">
-</p>
-
 # 🌊 BlueRoute
 
 > AI-powered Maritime Route Intelligence Platform leveraging **ASI:ONE** for real-time voyage analysis, weather-aware routing, AIS vessel tracking, piracy risk assessment and intelligent route recommendations.
