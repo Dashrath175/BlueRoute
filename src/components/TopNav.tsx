@@ -24,8 +24,8 @@ export default function TopNav({ selectedFromPort, selectedToPort }: TopNavProps
     <header className="h-14 bg-white border-b-3 border-slate-900 flex items-center justify-between px-6 relative z-30">
       {/* Brand logo & tagline */}
       <div className="flex items-center gap-3">
-        <div className="bg-slate-100 border-2 border-slate-900 p-2 rounded-none shadow-[2px_2px_0px_#0f172a]">
-          <Ship className="h-5 w-5 text-brand-sky" />
+        <div className="bg-slate-100 border-2 border-slate-900 rounded-none shadow-[2px_2px_0px_#0f172a] w-9 h-9 overflow-hidden flex items-center justify-center shrink-0">
+          <img src="/logo.jpg" alt="BlueRoute Logo" className="w-full h-full object-cover" />
         </div>
         <div>
           <h1 className="font-mono text-base font-black uppercase tracking-widest text-slate-900 flex items-center gap-1.5">
