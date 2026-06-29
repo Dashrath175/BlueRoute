@@ -1,3 +1,7 @@
+## Preview
+
+![BlueRoute](public/preview.png)
+
 # 🌊 BlueRoute
 
 AI-powered Maritime Route Intelligence Platform built for intelligent sea route planning.
