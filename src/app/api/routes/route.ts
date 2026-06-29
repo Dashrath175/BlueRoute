@@ -290,7 +290,7 @@ Return your response strictly as a JSON object matching the following structure.
         'Authorization': `Bearer ${apiKey}`
       },
       body: JSON.stringify({
-        model: 'asi1',
+        model: 'asi1-mini',
         messages: [{ role: 'user', content: prompt }]
       })
     });

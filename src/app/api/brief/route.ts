@@ -174,11 +174,11 @@ You MUST return a raw JSON object with the following exact keys (no markdown for
   "finalRecommendation": "Your final advisory recommendation to the Captain."
 }`;
 
-  const apiKey = 'sk_c89b5589c05e43bca33ecdd32a943b7b093ee9096d194b92b61d23db147f11d8';
+  const apiKey = process.env.ASI_ONE_API_KEY || 'sk_c89b5589c05e43bca33ecdd32a943b7b093ee9096d194b92b61d23db147f11d8';
 
   // 5. Query ASI:One API
   const requestBody = {
-    model: 'asi1',
+    model: 'asi1-mini',
     messages: [{ role: 'user', content: prompt }]
   };
 
