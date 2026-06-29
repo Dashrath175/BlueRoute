@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --panel-bg: #1e293b;
+  --panel-border: #334155;
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+  --text-muted-more: #94a3b8;
+  --shadow-color: #020617;
+  --panel-bg-hover: #1f2937;
+}
+
+@theme {
+  --color-brand-bg-darker: var(--background);
+  --color-brand-bg-dark: var(--background);
+  --color-brand-bg-card: var(--panel-bg);
+  --color-brand-glow: #2563eb;
+  --color-brand-sky: #1d4ed8;
+  --color-brand-success: #16a34a;
+  --color-brand-warning: #ea580c;
+  --color-brand-danger: #dc2626;
+  --color-brand-text: var(--text-main);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular;
+}
+
+body {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars for Brutalist panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+  border-left: 2px solid var(--panel-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-glow);
+  border: 2px solid var(--panel-border);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-sky);
+}
+
+/* Brutalist Panels (High contrast, thick borders, flat hard shadows) */
+.cyber-panel {
+  background: var(--panel-bg);
+  border: 3px solid var(--panel-border);
+  box-shadow: 4px 4px 0px var(--shadow-color);
+  position: relative;
+  overflow: hidden;
+  color: var(--text-main);
+}
+
+.glow-border {
+  border: 3px solid var(--panel-border);
+  box-shadow: 4px 4px 0px var(--color-brand-glow);
+}
+
+.glow-border-success {
+  border: 3px solid var(--panel-border);
+  box-shadow: 4px 4px 0px var(--color-brand-success);
+}
+
+.glow-border-danger {
+  border: 3px solid var(--panel-border);
+  box-shadow: 4px 4px 0px var(--color-brand-danger);
+}
+
+.glow-border-warning {
+  border: 3px solid var(--panel-border);
+  box-shadow: 4px 4px 0px var(--color-brand-warning);
+}
+
+/* Brutalist Button Styles */
+.brutalist-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-brand-glow);
+  color: #ffffff;
+  border: 3px solid var(--panel-border);
+  box-shadow: 3px 3px 0px var(--shadow-color);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+.brutalist-btn:hover:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px var(--shadow-color);
+}
+
+.brutalist-btn:active:not(:disabled) {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px var(--shadow-color);
+}
+
+.brutalist-btn:disabled {
+  background: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px var(--shadow-color);
+  transform: translate(3px, 3px);
+}
+
+/* --- THEME OVERRIDES FOR UTILITY CLASSES --- */
+
+/* Panels and Backgrounds */
+.bg-white {
+  background-color: var(--panel-bg) !important;
+}
+
+.bg-slate-50 {
+  background-color: var(--panel-bg-hover) !important;
+}
+
+.bg-slate-100 {
+  background-color: var(--panel-bg-hover) !important;
+}
+
+/* Borders */
+.border-slate-900 {
+  border-color: var(--panel-border) !important;
+}
+
+.border-b-3 {
+  border-bottom-width: 3px !important;
+}
+
+.border-t-3 {
+  border-top-width: 3px !important;
+}
+
+.border-r-3 {
+  border-right-width: 3px !important;
+}
+
+/* Text Colors */
+.text-slate-950, .text-slate-900, .text-slate-800 {
+  color: var(--text-main) !important;
+}
+
+.text-slate-700 {
+  color: var(--text-muted) !important;
+}
+
+.text-slate-500, .text-slate-400 {
+  color: var(--text-muted-more) !important;
+}
+
+.placeholder-slate-400::placeholder {
+  color: var(--text-muted-more) !important;
+}
+
+/* Specific Shadow Overrides */
+.shadow-\[2px_2px_0px_\#0f172a\] {
+  box-shadow: 2px 2px 0px var(--shadow-color) !important;
+}
+
+.shadow-\[3px_3px_0px_\#0f172a\] {
+  box-shadow: 3px 3px 0px var(--shadow-color) !important;
+}
+
+.shadow-\[4px_4px_0px_\#0f172a\] {
+  box-shadow: 4px 4px 0px var(--shadow-color) !important;
+}
+
+.shadow-\[1px_1px_0px_\#0f172a\] {
+  box-shadow: 1px 1px 0px var(--shadow-color) !important;
+}
+
+.shadow-\[2px_2px_0px_\#000\] {
+  box-shadow: 2px 2px 0px var(--shadow-color) !important;
+}
+
+.shadow-\[1px_1px_0px_\#000\] {
+  box-shadow: 1px 1px 0px var(--shadow-color) !important;
+}
+
