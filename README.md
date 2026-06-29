@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌊 BlueRoute
 
-## Getting Started
+AI-powered Maritime Route Intelligence Platform built for intelligent sea route planning.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://blue-route-sandy.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Problem
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Traditional maritime navigation tools provide raw route data but do not explain why a route is safer or more efficient.
 
-## Learn More
+BlueRoute solves this by combining maritime datasets, weather intelligence, piracy monitoring and AI-powered route reasoning.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Intelligent Route Planning
+- Global Port Network
+- Maritime Navigation Graph
+- Weather-aware Route Analysis
+- Piracy Risk Assessment
+- AIS Vessel Intelligence
+- Carbon Emission Estimation
+- AI Route Briefing using ASI:ONE
+- Interactive 3D Globe
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## AI Integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+BlueRoute uses **ASI:ONE** as the primary AI reasoning engine.
+
+The AI analyzes:
+
+- Route information
+- Weather conditions
+- Piracy threats
+- Navigation risks
+- Route efficiency
+
+It then generates an intelligent operational briefing explaining why the selected route is recommended.
+
+---
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Three.js
+- React
+- Globe.gl
+- AISStream API
+- ASI:ONE API
+
+---
+
+## Future Scope
+
+- Live Vessel Tracking
+- Live Weather Forecast
+- ETA Prediction
+- Fleet Analytics
+- Port Congestion Detection
+- Fuel Optimization
+
+---
+
+## Developed By
+
+Dashrath Saini
