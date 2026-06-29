@@ -1,6 +1,6 @@
-## Preview
-
-![BlueRoute](public/preview.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Dashrath175/BlueRoute/main/public/preview.png" alt="BlueRoute Preview" width="100%">
+</p>
 
 # 🌊 BlueRoute
 
